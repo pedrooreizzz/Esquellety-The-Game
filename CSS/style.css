@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url(https://i.pinimg.com/originals/e4/46/de/e446deea1b48f9ba7bb4c1afe2d1e541.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+            padding: 10px;
+        }
+    }
+
+    header {
+        background-color: purple;
+        padding: 10px;
+        height: 90px;
+
+        h1 {
+            position: absolute;
+            top: 4%;
+            left: 5%;
+            color: white;
+            font-family: Arial;
+        }
+
+        nav {
+            float: right;
+
+            .buttons {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    font-family: Arial;
+                    text-transform: uppercase;
+                    margin: 40px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        transition: 0.5s all;
+                    }
+
+                    a:hover {
+                        color: black;
+                    }
+
+                    .btn {
+                        background-color: black;
+                        padding: 5px 15px 5px 15px;
+                        border-radius: 10px;
+                    }
+
+                    .btn:hover {
+                        color: black;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 1000px;
+        margin: auto;
+
+        .tabela {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            margin: 100px;
+
+            .coluna {
+                img {
+                    width: 75%;
+                }
+
+            }
+
+        }
+
+        .btn {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: white;
+        }
+
+        p,
+        h1 {
+            color: white;
+            margin: 30px;
+        }
+
+        h1 {
+            font-size: 42px;
+        }
+    }
+
+    h2 {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px;
+    }
+
+    #História {
+        p {
+            background-color: rgb(0, 0, 0);
+            margin: 30px;
+            padding: 2px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px purple;
+        }
+    }
+
+    #sobre {
+        h2 {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            padding: 100px;
+        }
+
+        p {
+            padding: 50px;
+            color: white;
+            text-align: left;
+
+        }
+
+        .container {
+            display: grid;
+            grid-column: initial;
+            margin: 10px;
+            align-items: center;
+
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                border: 5px solid white;
+            }
+
+            .profile {
+                position: relative;
+                display: inline-block;
+            }
+
+            .profile-name {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 18px;
+                font-weight: bold;
+                color: white;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 5px 10px;
+                border-radius: 10px;
+            }
+        }
+
+        .instagram {
+            margin: 70px;
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    padding: 10px;
+    align-items: center;
+
+    .porco {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    p {
+        color: white;
+    }
+}
