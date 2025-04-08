@@ -20,13 +20,20 @@ body {
         background-color: purple;
         padding: 10px;
         height: 90px;
+        width: 100%;
+        position: fixed;
+
 
         h1 {
             position: absolute;
-            top: 4%;
+            top: 30%;
             left: 5%;
             color: white;
             font-family: Arial;
+        }
+
+        img {
+            padding: 20px;
         }
 
         nav {
@@ -209,4 +216,8 @@ footer {
     p {
         color: white;
     }
+}
+
+section {
+    padding: 50px 0;
 }
