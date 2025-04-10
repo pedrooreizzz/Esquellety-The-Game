@@ -2,10 +2,12 @@
     margin: 0;
 }
 
+
+
 body {
     background-color: black;
     background-image: url(https://i.pinimg.com/originals/e4/46/de/e446deea1b48f9ba7bb4c1afe2d1e541.gif);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: repeat-y;
 
@@ -19,21 +21,23 @@ body {
     header {
         background-color: purple;
         padding: 10px;
-        height: 90px;
+        height: 70px;
         width: 100%;
         position: fixed;
+        top: 0.01%;
 
 
         h1 {
             position: absolute;
-            top: 30%;
-            left: 5%;
+            top: 22%;
+            left: 9%;
             color: white;
             font-family: Arial;
         }
 
         img {
-            padding: 20px;
+            padding: 10px;
+            margin-left: 15px;
         }
 
         nav {
@@ -46,7 +50,9 @@ body {
                     display: inline-block;
                     font-family: Arial;
                     text-transform: uppercase;
-                    margin: 40px;
+                    margin: 20px;
+                    padding: 10px;
+                    top: 30%;
 
                     a {
                         color: white;
@@ -73,6 +79,54 @@ body {
         }
     }
 
+    #main-contato {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        h1,
+        h2 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 2rem;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        h1::before {
+            content: "📩";
+            display: block;
+        }
+
+        h2::before {
+            content: "✏";
+        }
+
+        .form {
+            width: 100%;
+            max-width: 32rem;
+            font-size: 1.125rem;
+        }
+
+        .form label,
+        .form input,
+        .form textarea,
+        .form button {
+            display: block;
+            width: 100%;
+        }
+
+        .form label {
+            color: white;
+            line-height: 1;
+        }
+    }
+
     main {
         font-family: Arial, Helvetica, sans-serif;
         width: 1000px;
@@ -83,14 +137,7 @@ body {
             grid-template-columns: 50% 50%;
             align-items: center;
             margin: 100px;
-
-            .coluna {
-                img {
-                    width: 75%;
-                }
-
-            }
-
+            padding: 10px;
         }
 
         .btn {
@@ -124,12 +171,13 @@ body {
         text-transform: uppercase;
         text-align: center;
         margin: 30px;
+        padding-top: 50px;
     }
 
     #História {
         p {
             background-color: rgb(0, 0, 0);
-            margin: 30px;
+            margin: 20px;
             padding: 2px;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
