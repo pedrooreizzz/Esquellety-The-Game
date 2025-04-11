@@ -78,8 +78,7 @@ body {
             }
         }
     }
-
-    #main-contato {
+    .main-contato {
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -88,44 +87,91 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         padding-right: 1rem;
         padding-left: 1rem;
-
-        h1,
-        h2 {
-            font-size: 3rem;
-            color: white;
-            margin-bottom: 2rem;
-            text-align: center;
-            line-height: 1.2;
-        }
-
-        h1::before {
-            content: "📩";
-            display: block;
-        }
-
-        h2::before {
-            content: "✏";
-        }
-
-        .form {
-            width: 100%;
-            max-width: 32rem;
-            font-size: 1.125rem;
-        }
-
-        .form label,
-        .form input,
-        .form textarea,
-        .form button {
-            display: block;
-            width: 100%;
-        }
-
-        .form label {
-            color: white;
-            line-height: 1;
-        }
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
+
+    .main-contato h1,
+    .main-contato h2 {
+        font-size: 3rem;
+        color: white;
+        margin-bottom: 2rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .main-contato h1::before {
+        content: "📩";
+        display: block;
+    }
+
+    .main-contato h2::before {
+        content: "✏";
+    }
+
+    .main-contato .form {
+        width: 100%;
+        max-width: 32rem;
+        font-size: 1.125rem;
+    }
+
+    .main-contato .form label,
+    .main-contato .form input,
+    .main-contato .form textarea,
+    .main-contato .form button {
+        display: block;
+        width: 100%;
+    }
+
+    .main-contato .form label {
+        color: white;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .main-contato .form input,
+    .main-contato .form textarea {
+        font: inherit;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid transparent;
+        border-radius: 8px;
+        transition: border-color, box-shadow 0.2s;
+    }
+    
+    .main-contato .form textarea {
+        min-height: 13rem;
+        resize: vertical;
+    }
+    
+    .main-contato .form input:hover,
+    .main-contato .form input:focus,
+    .main-contato .form textarea:hover,
+    .main-contato .form textarea:focus {
+        outline: none;
+        border-color: purple;
+        box-shadow: 0 0 0 3px purple;
+    }
+
+    .main-contato .form button {
+        display: block;
+        padding: 1rem;
+        background: purple;
+        color: white;
+        font: inherit;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .main-contato .form button:hover,
+    .main-contato .form button:focus {
+        outline: none;
+        background: darkviolet;
+    }
+
 
     main {
         font-family: Arial, Helvetica, sans-serif;
