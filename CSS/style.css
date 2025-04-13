@@ -101,6 +101,7 @@ body {
     }
 
     .main-contato h1::before {
+        padding-top: 25%;
         content: "📩";
         display: block;
     }
@@ -295,6 +296,7 @@ body {
 }
 
 footer {
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     background-color: purple;
