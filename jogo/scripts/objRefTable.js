@@ -13,6 +13,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Anchor,
 		C3.Plugins.Text,
 		C3.Behaviors.scrollto,
+		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Text.Acts.SetText,
@@ -33,6 +34,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SimulateControl,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.Audio.Cnds.IsTagPlaying,
+		C3.Plugins.Audio.Acts.Play,
+		C3.Plugins.Audio.Acts.Stop,
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Plugins.Sprite.Acts.SetWidth,
 		C3.Plugins.Sprite.Acts.SetSize,
@@ -92,6 +96,7 @@ self.C3_JsPropNameTable = [
 	{porta: 0},
 	{portahb: 0},
 	{colsion: 0},
+	{Áudio: 0},
 	{vida1: 0}
 ];
 
@@ -133,5 +138,6 @@ self.InstanceType = {
 	elixir: class extends self.ISpriteInstance {},
 	porta: class extends self.ISpriteInstance {},
 	portahb: class extends self.ISpriteInstance {},
-	colsion: class extends self.ISpriteInstance {}
+	colsion: class extends self.ISpriteInstance {},
+	Áudio: class extends self.IInstance {}
 }
