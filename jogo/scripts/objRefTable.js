@@ -36,8 +36,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SubInstanceVar,
 		C3.Plugins.Sprite.Acts.SetWidth,
 		C3.Plugins.Sprite.Acts.SetSize,
+		C3.Behaviors.Platform.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Sprite.Acts.SetCollisions,
+		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.ResetEventVar
 	];
@@ -57,6 +60,7 @@ self.C3_JsPropNameTable = [
 	{Plataforma: 0},
 	{inimigo1: 0},
 	{vida: 0},
+	{açao: 0},
 	{PorcoChefe: 0},
 	{hitbox: 0},
 	{marcador: 0},
@@ -87,6 +91,7 @@ self.C3_JsPropNameTable = [
 	{elixir: 0},
 	{porta: 0},
 	{portahb: 0},
+	{colsion: 0},
 	{vida1: 0}
 ];
 
@@ -127,5 +132,6 @@ self.InstanceType = {
 	barravida1: class extends self.ISpriteInstance {},
 	elixir: class extends self.ISpriteInstance {},
 	porta: class extends self.ISpriteInstance {},
-	portahb: class extends self.ISpriteInstance {}
+	portahb: class extends self.ISpriteInstance {},
+	colsion: class extends self.ISpriteInstance {}
 }
