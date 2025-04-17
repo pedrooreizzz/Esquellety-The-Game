@@ -78,6 +78,7 @@ body {
             }
         }
     }
+
     .main-contato {
         min-height: 100vh;
         display: flex;
@@ -129,7 +130,7 @@ body {
         line-height: 1;
         margin-bottom: 0.5rem;
     }
-    
+
     .main-contato .form input,
     .main-contato .form textarea {
         font: inherit;
@@ -139,12 +140,12 @@ body {
         border-radius: 8px;
         transition: border-color, box-shadow 0.2s;
     }
-    
+
     .main-contato .form textarea {
         min-height: 13rem;
         resize: vertical;
     }
-    
+
     .main-contato .form input:hover,
     .main-contato .form input:focus,
     .main-contato .form textarea:hover,
@@ -239,87 +240,66 @@ body {
         }
     }
 
-    #sobre {
-        h2 {
-            text-align: center;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
-            padding: 100px;
+    #profile {
+        display: flex;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+
+        .Biografia {
+            background-color: #2d0038;
+            border-radius: 20px;
+            margin: 20px;
+            text-align: left;
+            font-size: 16px;
+            font-family: Arial;
+            font-weight: bold;
+            color: #413333;
+
+            p, h2{
+                margin: 40px;
+            }
+            h2{
+                text-align: center;
+                font-size: 24px;
+                font-family: Arial;
+                font-weight: bold;
+            }
+        }
+       .Profile{
+        text-align: center;
+        margin: 30px;
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #413333;
+        .perfil{
+            margin: 10px;
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    footer {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        background-color: purple;
+        padding: 10px;
+        align-items: center;
+
+        .porco {
+            width: 50px;
+            height: 50px;
+
         }
 
         p {
-            padding: 50px;
             color: white;
-            text-align: left;
-
-        }
-
-        .container {
-            display: grid;
-            grid-column: initial;
-            margin: 10px;
-            align-items: center;
-
-            .profile-pic {
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                margin-bottom: 10px;
-                border: 5px solid white;
-            }
-
-            .profile {
-                position: relative;
-                display: inline-block;
-            }
-
-            .profile-name {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 18px;
-                font-weight: bold;
-                color: white;
-                background: rgba(0, 0, 0, 0.6);
-                padding: 5px 10px;
-                border-radius: 10px;
-            }
-        }
-
-        .instagram {
-            margin: 70px;
-            text-align: center;
         }
     }
-}
 
-footer {
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    background-color: purple;
-    padding: 10px;
-    align-items: center;
-
-    .porco {
-        width: 50px;
-        height: 50px;
-
+    section {
+        padding: 50px 0;
     }
-
-    p {
-        color: white;
-    }
-}
-
-section {
-    padding: 50px 0;
-}
-
-/* responsivo*/
-
-@media screen and (max-width: 768px) {
-    
 }
