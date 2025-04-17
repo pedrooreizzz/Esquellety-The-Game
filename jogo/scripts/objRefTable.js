@@ -44,6 +44,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Sprite.Acts.SetCollisions,
+		C3.Plugins.Text.Acts.SetVisible,
 		C3.Behaviors.solid.Acts.SetEnabled,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.System.Acts.ResetEventVar
@@ -97,6 +98,7 @@ self.C3_JsPropNameTable = [
 	{portahb: 0},
 	{colsion: 0},
 	{Áudio: 0},
+	{Texto: 0},
 	{vida1: 0}
 ];
 
@@ -139,5 +141,6 @@ self.InstanceType = {
 	porta: class extends self.ISpriteInstance {},
 	portahb: class extends self.ISpriteInstance {},
 	colsion: class extends self.ISpriteInstance {},
-	Áudio: class extends self.IInstance {}
+	Áudio: class extends self.IInstance {},
+	Texto: class extends self.ITextInstance {}
 }
